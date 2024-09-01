@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+    background-color: #1E1E1E;
+    width: 100%;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+}
+header li a:hover{
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+header{
+    margin-top: 0.7em;
+    display: flex;
+    justify-content: space-around;
+    gap: 10em;
+}
+header h1{
+    padding: 1em 0em 0em 1em;
+}
+header nav ul{
+    gap: 10em;
+    font-family: 'Kumbh Sans';
+    list-style-type: none;
+    display: flex; 
+}
+
+header nav li{
+    margin: 1.9em 0em 1em 0em;
+
+    padding: 0.2em 1em;
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: #6A70F3;
+}
+#area-usuario{
+    display: flex;
+    align-items: center;
+    padding: 1em 1em 0 0;
+    margin: 0em 1em 0 0;
+}
+#np{
+    text-align: right;
+    font-family: "Kumbh Sans";
+    margin: 0 1em 0 0;
+}
+section#destaque{
+    display: flex;
+    justify-content: center;
+}
+#carouselExampleFade{
+    width: 90%;
+    margin-top: 2em;
+}
+section.carrossel{
+    margin: 5em 5.6em;
+    align-items: center;
+}
+div.carrossel{
+    border-radius: 10px;
+    background-color: #6A70F3;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em 0;
+}
+div.setas{
+    background-color: #8A8EE5;
+    padding: 10em 0;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 2em 0;
+    gap: 45%;
+}
+footer ul{
+    display: flex;
+    list-style-type: none;
+}
+footer ul li{
+    padding: 1em;
+}
+
+/* CATALOGO CSS MODIFICAÇÕES */
+section.pesquisa{grid-area: p;}
+section.filtros{grid-area: f;}
+section.jogos{grid-area: j;}
+
+main.main-catalogo{
+    max-width: 95.5em;
+    padding: 0 0 0 7px;
+    margin: 0 auto;
+    display: grid;
+    gap: 3em;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "p p"
+    "f j";
+}
+ul{
+    list-style-type: none;
+}
+section.jogos img{
+    width: 14em;
+}
+section.pesquisa{
+    background-color: #6A70F3;
+    padding: 0.7em;
+    border-radius: 4px;
+    margin-top: 2em;
+    display: flex;
+    justify-content: right;
+}
+form.d-flex{
+    width: 15em;
+    background-color: white;
+    padding: 0.4em;
+    border-radius: 4px;
+    /* margin-right: 2em; */
+}
+form.d-flex button{
+    background-color: transparent;
+    border: none;
+}
+form.d-flex input{
+    border: 0;
+    margin-left: 10px;
+    outline: 0;
+    font-family: "Kumbh Sans";
+}
+section.filtros{
+    font-family: "Kumbh Sans";
+    background-color: #6A70F3;
+    padding: 3em;
+}
+section.filtros h3{
+    font-size: 25px;
+}
+section.filtros label{
+    font-size: 19px;
+}
+.checkmark{
+    margin-top: 3px;
+}
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 22px;
+    user-select: none;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #fff;
+    background: #6A70F3;
+    border-radius: 2px;
+}
+
+.checkbox input ~ .checkmark:hover {
+    background-color: #6A70F3;
+    cursor: pointer;
+}
+
+.checkbox input:checked ~ .checkmark {
+    background-color: #6A70F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+section.jogos{
+    background-color: #6A70F3;
+    padding: 1em 3em 3em 3em;
+}
+
+section.jogos div{
+    display: flex;
+    font-family: "Kumbh Sans";
+    margin: 2em 1em 2em 0em;
+}
+
+section.jogos ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;  
+    justify-content: space-between;
+    padding: 0;
+}
+section.jogos h2{
+    font-size: 20px;
+}
+section.jogos button{
+    border: none;
+    font-family: "Kumbh Sans";
+    background-color: white;
+    font-size: 20px;
+    padding: 0px 10px;
+    border-radius: 4px;
+    margin-left: 1em;
+}
+
+/* detalhes do jogo  */
+.jogo img{
+    width: 500px;
+}
+.detalhes_do_jogo{
+    font-family: "kumbh Sans";
+    border-radius: 0.3em;
+    max-width: 95.5em;
+    padding: 4em;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    background-color: #6A70F3;
+}
+.detalhes_do_jogo li{
+    list-style: none;
+}
+.ficha{
+    display: flex;
+}
+.ficha img{
+    width: 500px;
+}
+.ficha div{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin: 0 3em;
+    max-width: 45em;
+    font-size: 26px;
+}
+.ficha h2{
+    display: inline-block;
+    padding: 0.3em 0;
+    font-size: 45px;
+    border-bottom: 2px solid white;
+}
+.ficha ol{
+    padding: 0;
+}
+.ficha li{
+    margin: 0.5em 0;
+}
+.ficha span{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.ficha span p{
+    font-size: 25px;
+    margin: 0;
+}
+.ficha span img{
+    width: 10em;
+}
+.detalhes{
+    margin-top: 3em;
+}
+
+.detalhes h2{
+    font-size: 35px;
+    border-bottom: 3px solid white;
+    display: inline-block;
+}
+.detalhes ol{
+    font-size: 20px;
+    display: flex;
+}
+.detalhes li{
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detalhes p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.detalhes div:nth-child(3) li{
+    margin-right: 2em;
+    font-size: 30px;
+}
+.detalhes div:nth-child(3) img{
+    width: 120px;
+    height: 150px;
+}
+
+/* COMUNIDADE CSS ALTERAÇÕES */
+section.comentarios{grid-area: coment;}
+section.mensagens{grid-area: msg;}
+section.postagem{grid-area: post;}
+
+main.main-comunidade{
+    display: grid;
+    font-family: "Kumbh Sans";
+    max-width: 95.5em;
+    /* padding: 0 0 0 7px; */
+    margin: 0 auto;
+    margin-top: 2em;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1.78fr;
+    grid-template-areas: 
+    "coment msg"
+    "coment post"
+    "coment post";
+}
+section.comentarios{
+    padding: 1.5em 1.5em 0em 1.5em;
+    background-color: #6A70F3;
+}
+section.comentarios .com{
+    padding: 1em 1em 0em 1em;
+    background-color: white;
+    color: black;
+}
+section.comentarios div ul{
+    display: flex;
+    padding: 0;
+}
+section.comentarios div li{
+    display: flex;
+    padding: 20px 20px 20px 0px;
+}
+section.comentarios div li h3{
+    padding: 0 0px 0 10px;
+    margin-top: 7px;
+}
+.g{
+    display: flex;
+}
+.g h2{
+    padding: 0.9em 0em 0 0.5em;
+    font-size: 26px;
+}
+.g img{
+    padding: 0;
+    margin: 0;
+}
+section.comentarios p{
+    font-size: 22px;
+}
+section.mensagens{
+    background-color: #6A70F3;
+    height: 32em;
+    padding: 2em;
+}
+section.mensagens h2{
+    text-align: center;
+}
+section.mensagens h3{
+    font-size: 24px;
+}
+section.mensagens p{
+    font-size: 18px;
+}
+section.mensagens div.mag{
+    display: flex;
+}
+section.mensagens div.mag div{
+    padding: 0.5em 0em 0 1em;
+}
+
+section.postagem{
+    background-color: #6A70F3;
+    height: 24em;
+    padding: 1.5em;
+}
+section.postagem #fundo{
+    background-color: white;
+}
+section.postagem p{
+    font-size: 30px;
+    color: #858585;
+    padding: 1em 0 5em 1em;
+}
+section.postagem ul{
+    display: flex;
+    padding-left: 1em;
+    margin: 0;
+}
+section.postagem li{
+    margin: 0 2.5em 0 0;
+    height: 46px;
+}
+section.postagem #funcoes{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+section.postagem button{
+    color: white;
+    border: none;
+    font-family: "Kumbh Sans";
+    background-color: black;
+    font-size: 24px;
+    padding: 5px 25px;
+    border-radius: 4px;
+    margin-left: 1em;
+
+}
+
+
+/* perfil do usuário */
+
+section#info{
+    background-color: #6A70F3;
+    display: flex;
+    margin: 2em auto;
+    width: 90%;
+    padding: 3em;
+    border-radius: 10px;
+}
+section.posts{
+    width: 63em;
+}
+div.posts{
+    background-color: #6A70F3;
+    border-radius: 10px;
+    padding: 1em;
+}
+div.post{
+    background-color: white;
+    color: black;
+    padding: 2em;
+    margin: 2em;
+}
+section.favoritos{
+    width: 35%;
+}
+div.favoritos{
+    background-color: #6A70F3;
+    border-radius: 10px;
+    padding: 2em;
+}
